@@ -19,7 +19,12 @@ selectedtitle.text = booktitle
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func backbutton(_ sender: Any) {
+        
+    self.dismiss(animated: true, completion: nil)
+    
+    }
+    
     /*
     // MARK: - Navigation
 
