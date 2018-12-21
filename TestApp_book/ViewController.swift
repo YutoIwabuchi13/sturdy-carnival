@@ -37,6 +37,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
     }
     
+    // Segue 準備
+    override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
+        if (segue.identifier == "toDetailViewController") {
+            let detailViewController: DetailViewController = (segue.destination as? DetailViewController)!
+            // SubViewController のselectedImgに選択された画像を設定する
+           detailViewController.booktitle = selectedtitle
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

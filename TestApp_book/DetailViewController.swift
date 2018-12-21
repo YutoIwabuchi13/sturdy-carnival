@@ -10,9 +10,12 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var selectedtitle: UILabel!
+    var  booktitle :String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+selectedtitle.text = booktitle
         // Do any additional setup after loading the view.
     }
     
